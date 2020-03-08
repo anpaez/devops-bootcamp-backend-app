@@ -15,3 +15,12 @@ La idea es tener la aplicación desplegada en `Kubernetes` con 4 replicas y ver 
 Además la aplicación estará monitorizada utilizando `Prometheus`.
 
 En este proyecto se trabajará con el workflow `feature branch`
+
+## Docker
+
+Para lanzar la aplicación en local, mediante docker, ejecutar:
+
+~~~bash
+docker build -t backend-project .
+docker run -p 3000:3000 -v .:  backend-project
+~~~
