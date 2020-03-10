@@ -24,3 +24,7 @@ Para lanzar la aplicación en local, mediante docker, ejecutar:
 docker build -t backend-project .
 docker run -p 3000:3000 -v .:  backend-project
 ~~~
+
+## Proyecto
+
+[Para ver el proyecto global mirar aqui](https://github.com/anpaez/devops-bootcamp-equipoa)
