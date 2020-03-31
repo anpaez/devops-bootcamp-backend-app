@@ -1,7 +1,4 @@
 pipeline { 
-    agent {
-        dockerfile true
-    }  
     stages { 
         stage('Prueba') { 
             steps {
@@ -9,6 +6,9 @@ pipeline {
             }
         }
         stage('Test Application') { 
+            agent {
+                dockerfile true
+            }  
             steps {
                sh 'rails test' 
             }
