@@ -9,7 +9,7 @@ pipeline {
         stage('Test Application') { 
             agent {
                 dockerfile true
-            }  
+            }
             steps {
                sh 'rails test' 
             }
